@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
       table_input_el.type = "text";
       table_input_el.value = recebe;
       table_input_el.setAttribute("readonly", "readonly");
-
+/*
       td_content_el.appendChild(table_input_el);
 
       const btn_actions_el = document.createElement("div");
@@ -48,7 +48,7 @@ window.addEventListener("load", function () {
       btn_actions_el.appendChild(btn_read_el);
       btn_actions_el.appendChild(btn_edit_el);
       btn_actions_el.appendChild(btn_delete_el);
-
+*/
       tr_el.appendChild(btn_actions_el);
       list_el.appendChild(tr_el);
       input.value = "";
