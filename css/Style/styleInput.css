@@ -1,0 +1,356 @@
+.tableRow {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 15px auto;
+}
+.container-tasks {
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+}
+.background-tasks {
+  background: white;
+  border-radius: 5px;
+}
+.corMarca {
+  color: #9fa6c2;
+}
+.tableColumm1 .text {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 0;
+  width: 400px;
+  height: 40px;
+}
+.input-tableColumm1,
+.text {
+  outline: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  border: 0;
+  width: 400px;
+  height: 40px;
+}
+
+.input-tableColumm1::placeholder {
+  color: #9fa6c2;
+}
+
+.input-tableColumm1:focus {
+  outline: 0;
+}
+/* Button tasks*/
+button {
+  font-family: inherit;
+}
+.action {
+}
+.delete {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+/* End of Delete Button */
+.edit {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+/* End of Edit Button */
+.save {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+/* End of Save Button */
+/*Read Button */
+.read {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+/*Read button*/
+.unread {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+.star {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+.starFill {
+  background: #ffffff;
+  font-size: 12px;
+  padding: 10px 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+}
+.bi-trash {
+  font-size: px;
+  background: #fff;
+  border: none;
+}
+.close {
+  background: #d1e7dd;
+  border: none;
+  font-weight: 500px;
+  float: right;
+}
+
+.alert {
+  font-size: 1rem bold;
+  width: 500px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*MENSAGEM DE SUCESSO*/
+.message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #90f4a8;
+  color: #155724;
+  padding: 20px 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  animation: slidein 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.message::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+@keyframes time {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*MENSAGEM DE SUCESSO*/
+/*MENSAGEM DE DELETE*/
+.messageDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f34949;
+  color: #6f0f0f;
+  padding: 20px 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  animation: slidein 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.messageDelete::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+@keyframes time {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*MENSAGEM DE SAVE*/
+.messageSave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #49aff3;
+  color: #0f316f;
+  padding: 20px 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  animation: slidein 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.messageSave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+@keyframes time {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*MENSAGEM NULL*/
+.messageDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f34949;
+  color: #6f0f0f;
+  padding: 20px 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  animation: slidein 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.messageDelete::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+@keyframes time {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*MENSAGEM DE SAVE*/
+.messageNull {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f3dc49;
+  color: #6f670f;
+  padding: 20px 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  animation: slidein 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.messageNull::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+@keyframes time {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

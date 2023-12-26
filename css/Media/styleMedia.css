@@ -1,0 +1,66 @@
+@media screen and (max-width: 600px) {
+  /*Header*/
+  /*title*/
+  .title-todo {
+    font-family: "Oswald", sans-serif;
+    margin: 0 auto;
+    background: #af7eeb;
+    max-width: 300px;
+    height: 40px;
+  }
+  .title-todo-text {
+    padding: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600px;
+  }
+  /*title*/
+  /*Form*/
+  #new-task-form {
+    margin: 10px auto 10px auto;
+    justify-content: center;
+    text-align: center;
+  }
+  #new-task-input {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    border: none;
+    width: 300px;
+    height: 30px;
+  }
+  #new-task-input::placeholder {
+    color: #9fa6c2;
+  }
+  #new-task-input:focus {
+    outline: 0;
+  }
+
+  /*Form*/
+  /*Button*/
+
+  .submit-button {
+    text-align: center;
+  }
+  #new-task-submit {
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: #af7eeb;
+    color: #ffffff;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  /*Button*/
+  /*Header*/
+}

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e3e9ff;
+}
+/*Header*/
+/*title*/
+.title-todo {
+  font-family: "Oswald", sans-serif;
+  margin: 0 auto;
+  background: #af7eeb;
+  max-width: 500px;
+  height: 60px;
+}
+.title-todo-text {
+  padding: 10px;
+  margin-top: 5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800px;
+}
+/*title*/
+/*Form*/
+#new-task-form {
+  margin: 20px auto 10px auto;
+  justify-content: center;
+  text-align: center;
+}
+#new-task-input {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  width: 500px;
+  height: 40px;
+}
+#new-task-input::placeholder {
+  color: #9fa6c2;
+}
+#new-task-input:focus {
+  outline: 0;
+}
+
+/*Form*/
+/*Button*/
+
+.submit-button {
+  text-align: center;
+}
+#new-task-submit {
+  margin-top: 8px;
+  font-family: "Oswald", sans-serif;
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: #af7eeb;
+  color: #ffffff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+/*Button*/
+/*Header*/
