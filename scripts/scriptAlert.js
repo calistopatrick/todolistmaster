@@ -8,6 +8,7 @@ const msgD = "Task deletada !";
 const msgSave = "Task atualizada !";
 const msgNull = "Task vazia !";
 
+/*TASK SUCESSO*/
 function ativar(msg) {
   const message = document.createElement("div");
   message.classList.add("message");
@@ -23,7 +24,7 @@ submit.addEventListener("click", () => {
   ativar(msg);
 });
 
-/*DELETE*/
+/*DELETE TASK*/
 function ativarD(msgD) {
   const message = document.createElement("div");
   message.classList.add("messageDelete");
@@ -40,7 +41,7 @@ btn_delete_el.addEventListener("click", () => {
   ativarD(msgD);
 });
 
-/*SAVE*/
+/*SAVE TASK*/
 function ativarSave(msgSave) {
   const message = document.createElement("div");
   message.classList.add("messageSave");
@@ -56,24 +57,8 @@ function ativarSave(msgSave) {
 btn_edit_el.addEventListener("click", () => {
   ativarSave(msgSave);
 });
-/*DELETE*/
-function ativarD(msgD) {
-  const message = document.createElement("div");
-  message.classList.add("messageDelete");
-  message.setAttribute("style", "color: #fff");
-  message.innerText = msgD;
-  divMessage.appendChild(message);
 
-  setTimeout(() => {
-    message.style.display = "none";
-  }, 3000);
-}
-
-btn_delete_el.addEventListener("click", () => {
-  ativarD(msgD);
-});
-
-/*NULL*/
+/* TASK NULL*/
 function ativarNull(msgSave) {
   const message = document.createElement("div");
   message.classList.add("messageNull");
